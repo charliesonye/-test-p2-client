@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background: black;
-  margin: 0 15% 15%;
+  margin: 5% 15% 5%;
   border-radius: 25px;
   padding: 20px 50px 40%;
 }
@@ -10,10 +10,18 @@
 position: relative;
 right: 30%; */
 /* } */
+.Home {
+  color:white;
+  font-family:'Kongtext';
+}
+
+.Questions {
+  color:white;
+}
 
 .NavLink {
   display: "inline-block";
-  /* font-family: "san serif"; */
+
   border-radius: "25px";
   width: "110px";
   padding: "12px";
