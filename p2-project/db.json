@@ -5,7 +5,8 @@
     "questions":[
         {
           "id": 1,     
-          "prompt": "Which anime has a swordsman that is notorious for hunting his own kind and carries three swords?" 
+          "prompt": "Which anime has a swordsman that is notorious for hunting his own kind and carries three swords?",
+          "answers":["Dragon Ball Z", "Death Note", "Berserk", "Fullmetal Alchemist"]
         }
     ]
 }

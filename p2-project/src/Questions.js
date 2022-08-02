@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Question from './Question'
 
  function Questions() {
 
@@ -10,12 +11,12 @@ import React, {useState, useEffect} from 'react'
     .then(data => setQuestions(data))
   }, [])
 
-  const questionsList = questions.map((q)=> < Question key={q.id} />)
+  const questionsList = questions.map((q)=> < Question key={q.id} questionObj={q} />)
 
 
   return (
     <div className='Questions'>
-      {questionList}
+      {questionsList}
 
     </div>
   )

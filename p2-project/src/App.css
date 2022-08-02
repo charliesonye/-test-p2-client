@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Kongtext';
+  color: white;
   background: black;
   margin: 5% 15% 5%;
   border-radius: 25px;
@@ -12,12 +14,17 @@ right: 30%; */
 /* } */
 .Home {
   color:white;
-  font-family:'Kongtext';
+  
 }
 
 .Questions {
   color:white;
+  ;
 }
+/* 
+.Question {
+  
+} */
 
 .NavLink {
   display: "inline-block";
