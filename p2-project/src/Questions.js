@@ -16,6 +16,9 @@ import Question from './Question'
 
   return (
     <div className='Questions'>
+      <br />
+      <h1>  Test Your Knowlege</h1>
+      <hr />
       {questionsList}
 
     </div>

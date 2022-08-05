@@ -16,13 +16,13 @@ const linkStyles = {
 function Navigation() {
   return (
     <div className="NavBar">
-        <NavLink to='/' exact style={linkStyles}>
+        <NavLink to='/'  style={linkStyles}>
             Home
         </NavLink>
-        <NavLink to='/animes' exact style={linkStyles}>
+        <NavLink to='/animes'  style={linkStyles}>
             Animes
         </NavLink>
-        <NavLink to='/questions' exact style={linkStyles}>
+        <NavLink to='/questions'  style={linkStyles}>
             Anime Quiz
         </NavLink>
     </div>

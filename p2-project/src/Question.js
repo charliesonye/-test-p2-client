@@ -17,8 +17,8 @@ function Question({questionObj}) {
        
        <br/>
        <br/>
-        <h3>  Test Your Knowlege</h3>
-        <hr/> 
+        
+       
        <br/>
        <br/>
        <h4>Question {id}</h4>
