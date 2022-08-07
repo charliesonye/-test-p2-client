@@ -2,7 +2,9 @@ import React from 'react'
 
 function Animes() {
   return (
-    <div>Animes</div>
+    <div>
+      <h1>Animes</h1>
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Question from './Question'
+import QuestionSubmitButton from './QuestionSubmitButton'
 
  function Questions() {
 
@@ -20,7 +21,9 @@ import Question from './Question'
       <h1>  Test Your Knowlege</h1>
       <hr />
       {questionsList}
-
+      <br />
+      <br /> 
+      <QuestionSubmitButton />
     </div>
   )
 }
