@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react'
+// import React, { useState, useEffect } from 'react'
 
- function ScoreDisplay() {
+//  function ScoreDisplay() {
   
-    const[scores, setScores] = useState([])
+//     const[scores, setScores] = useState([])
   
-  useEffect(()=> {
+ 
+  
+//     return (
+//     <div>
+//         <h1> Scoreboard</h1>
+//         <li></li>
+//     </div>
+//   )
+// }
 
-  }, [])
-  
-    return (
-    <div>
-        <h1> Scoreboard</h1>
-    </div>
-  )
-}
-
-export default ScoreDisplay
+// export default ScoreDisplay

@@ -18,8 +18,8 @@ function Question({questionObj}) {
    
   // function onHandleAnswer(e) {
   //    return (
-  //     fetch(`http://localhost:3000/questions/${id}`, {
-  //       method: 'PATCH' ,
+  //     fetch(`http://localhost:3000/questions`, {
+  //       method: 'POST' ,
   //       headers: {
   //         'Content-Type': 'application/json'
   //       },

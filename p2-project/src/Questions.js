@@ -1,16 +1,12 @@
-import React, {useState, useEffect} from 'react'
-import Question from './Question'
+import React from 'react'
+import Question from './QuestionForm'
 import QuestionSubmitButton from './QuestionSubmitButton'
 
- function Questions() {
+ function Questions({questions}) {
 
-  const [questions, setQuestions] = useState([])
   
-  useEffect(() => {
-    fetch('http://localhost:3000/questions')
-    .then(res => res.json())
-    .then(data => setQuestions(data))
-  }, [])
+  
+ 
 
   const questionsList = questions.map((q)=> < Question key={q.id} questionObj={q} />)
 
