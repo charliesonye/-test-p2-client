@@ -1,14 +1,9 @@
 import React from 'react'
-import Question from './QuestionForm'
-import QuestionSubmitButton from './QuestionSubmitButton'
+import Question from './Question'
 
- function Questions({questions}) {
+import questions from './Data'
 
-  
-  
- 
-
-  const questionsList = questions.map((q)=> < Question key={q.id} questionObj={q} />)
+ function Questions() {
 
 
   return (
@@ -16,10 +11,10 @@ import QuestionSubmitButton from './QuestionSubmitButton'
       <br />
       <h1>  Test Your Knowlege</h1>
       <hr />
-      {questionsList}
+      <Question questions={questions} />
       <br />
       <br /> 
-      <QuestionSubmitButton />
+     
     </div>
   )
 }

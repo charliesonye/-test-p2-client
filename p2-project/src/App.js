@@ -11,13 +11,9 @@ function App() {
 
 
 
-  const [questions, setQuestions] = useState([])
+  
 
-  useEffect(() => {
-    fetch('http://localhost:3000/questions')
-    .then(res => res.json())
-    .then(data => setQuestions(data))
-  }, [])
+  
   return (
  
 
@@ -28,10 +24,10 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route exact path='/animes' component={Animes} />
             <Route exact path= '/questions' >
-              <Questions questions={questions} />  
+              <Questions  />  
             </Route>  
             <Route path='/questions/score'>
-              <ScoreDisplay questions={questions} />
+              <ScoreDisplay  />
             </Route>
           
           </Switch>
