@@ -1,21 +1,47 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 
 
-function Animes() {
+function Animes({animes}) {
 
-  const [animes, setAnimes] = useState([])
+  
+  const [current, setCurrent] = useState(0)
+  const length = animes.data.length
 
-  useEffect(() => {
-    fetch('https://api.jikan.moe/v4/anime')
-    .then(res => res.json())
-    .then(data => setAnimes(data) )
-  }, [])
+  const previousClick = () => {
+    setCurrent( current === 0 ? length -1: current -1)
+  }
 
+  const nextClick = () => {
+    setCurrent(current ===  length - 1? 0: current + 1)
+  }
 
 
   return (
-    <div>
-      {/* <img src={animes.data[0].images.jpg.large_image_url} alt='Image of Anime' /> */}
+    <div className='carousel' >
+      <FaArrowAltCircleLeft className='leftArrow' onClick={previousClick} />
+      <FaArrowAltCircleRight className='rightArrow' onClick={nextClick} />
+      { Array.isArray(animes.data)
+
+      ? (animes.data.map((anime, index) =>  (
+          <div key={anime.images.jpg.large_image_url} className={index === current? 'smoothTransition': 'transition'}>
+              
+              {index === current && (
+               <>
+                <img  src={anime.images.jpg.large_image_url} alt="The anime" className='image' />
+                <h3>Show Description</h3>
+
+               </>
+              )}
+              
+              
+
+          </div>
+      ))) : null
+            
+    }
+      
+     
     </div>
   )
 }

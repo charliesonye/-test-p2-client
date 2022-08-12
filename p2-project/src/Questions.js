@@ -9,7 +9,7 @@ import questions from './Data'
   return (
     <div className='Questions'>
       <br />
-      <h1>  Test Your Knowlege</h1>
+      <h1>  Test Your Knowledge</h1>
       <hr />
       <Question questions={questions} />
       <br />

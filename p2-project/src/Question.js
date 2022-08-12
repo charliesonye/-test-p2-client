@@ -14,9 +14,9 @@ function Question({questions}) {
 
     let answerValues = question[currentQuestion].answers.map((answer, index) => answer)
         
-    console.log(answerValues)
+    
     const answersList = questions[currentQuestion].answers.map((answer, index) => {
-      
+     console.log(answer)
       return(
 
        <option value={index} key={index}>{answer.answer}</option>
@@ -38,7 +38,7 @@ function Question({questions}) {
 
    if(isCorrect){
     // setScore(score + 1)
-    console.log(isCorrect)
+    // {debugger}
    }
   
   }
@@ -57,9 +57,9 @@ function Question({questions}) {
           <h4>Question {questions[currentQuestion].id}</h4>
           
           <p>{questions[currentQuestion].prompt} </p>
-          
+          {/* Use fetch  */}
           <select onChange= {() => onHandleAnswer() }>
-              
+                
                 <option>Please choose an option</option>
                 {answersList}
             </select>

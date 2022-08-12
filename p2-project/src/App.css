@@ -1,17 +1,16 @@
 .App {
+  position: absolute;
   text-align: center;
+  align-content: center;
   font-family: 'Kongtext';
   color: white;
   background: black;
   margin: 5% 15% 5%;
   border-radius: 25px;
-  padding: 20px 50px 40%;
+  padding: 5px 20% 40%;
 }
 
-/* .NavBar {
-position: relative;
-right: 30%; */
-/* } */
+
 .Home {
   color:white;
   
@@ -23,10 +22,50 @@ right: 30%; */
 }
 
 
-/* 
-.Question {
+.carousel {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-} */
+}
+.smoothTransition {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.transition {
+  opacity: 1;
+  transition-duration: 1s ease;
+}
+
+.image {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.rightArrow {
+  position: absolute;
+  width:50px;
+  height:70%;
+  left: 120%;
+  top: 5%;
+  z-index: 10;
+ 
+}
+
+.leftArrow {
+  position: absolute;
+  width:50px;
+  height:70%;
+  right: 120%;
+  top: 5%;
+  z-index: 10;
+ 
+}
 
 .NavLink {
   display: "inline-block";
