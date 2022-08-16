@@ -50,7 +50,7 @@ function addAnime(animes,newAnime){
                 <Questions  score={score} setScore={setScore} />  
               </Route> 
               <Route path='/questions/score' >
-                <ScoreDisplay  score={score}/>
+                <ScoreDisplay  score={score} setScore={setScore}/>
               </Route>
             </Switch>
         </div>

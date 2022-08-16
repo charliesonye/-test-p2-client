@@ -1,7 +1,9 @@
 import {useState} from 'react'
+import {useHistory} from 'react-router-dom'
 
  function AnimeForm({PageTitleStyle, addAnime, animes}) {
   
+  const history = useHistory()
   const [formData, setFormData] =useState({
     name: "",
     image: "",
@@ -38,6 +40,7 @@ import {useState} from 'react'
         image: "",
         description: ""
       })
+      history.push('/animes')
     })
    
     
