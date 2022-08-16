@@ -1,31 +1,13 @@
 import React, {useState} from 'react'
 import { useHistory } from "react-router-dom"
-import ScoreDisplay from './ScoreDisplay'
 
-function Question({questions}) {
+
+function Question({questions, score, setScore}) {
     const [currentQuestion, setCurrentQuestion] = useState(0)
-    const [showResults, setShowResults] = useState(false)
-    const [score, setScore] = useState(0)
+    // const [showResults, setShowResults] = useState(false)
+    // const [score, setScore] = useState(0)
     const history = useHistory()
-  
-    let questionsList = questions.map(question => question )
-    const question = questionsList
-
-
-    let answerValues = question[currentQuestion].answers.map((answer, index) => answer)
-        
-    
-    const answersList = questions[currentQuestion].answers.map((answer, index) => {
-     console.log(answer)
-      return(
-
-       <option value={index} key={index}>{answer.answer}</option>
-       
-      )
-    })
-
    
-
 
   function onHandleAnswer(isCorrect){
     const nextQ = currentQuestion + 1
@@ -33,23 +15,19 @@ function Question({questions}) {
    if(nextQ < questions.length){
     setCurrentQuestion(nextQ)
    }else{
-    setShowResults(true)
+    history.push('/questions/score')
    }
 
    if(isCorrect){
-    // setScore(score + 1)
-    // {debugger}
+    setScore(score + 1)
+   
    }
   
   }
 
     return (
      <div>
-         {showResults ?  (
-          <ScoreDisplay  score = {score} /> 
         
-         ): (
-
         
         <div className='Question'>
           <br/>
@@ -58,16 +36,25 @@ function Question({questions}) {
           
           <p>{questions[currentQuestion].prompt} </p>
           {/* Use fetch  */}
-          <select onChange= {() => onHandleAnswer() }>
+          {/* <select onChange= {() => onHandleAnswer() }>
                 
                 <option>Please choose an option</option>
                 {answersList}
-            </select>
+            </select> */}
+            {
+               questions[currentQuestion].answers.map((answer, index) => {
+    
+                return(
+                //  <option value={index} key={index}>{answer.answer}</option>
+                <button key={index} value={index} onClick={() => onHandleAnswer(answer.isCorrect)} >{answer.answer}</button>
+                )
+              })
+            }
 
           
         </div>
     
-        )}
+        
 
      </div>
   )

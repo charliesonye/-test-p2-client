@@ -2,46 +2,48 @@ import {useState} from 'react'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 
 
-function Animes({animes}) {
 
+function Animes({ animes}) { 
   
   const [current, setCurrent] = useState(0)
-  const length = animes.data.length
 
   const previousClick = () => {
-    setCurrent( current === 0 ? length -1: current -1)
+    
+    setCurrent( current === 0 ? animes.length -1: current -1)
   }
 
   const nextClick = () => {
-    setCurrent(current ===  length - 1? 0: current + 1)
+    setCurrent(current ===  animes.length - 1? 0: current + 1)
   }
-
+ 
 
   return (
     <div className='carousel' >
-      <FaArrowAltCircleLeft className='leftArrow' onClick={previousClick} />
-      <FaArrowAltCircleRight className='rightArrow' onClick={nextClick} />
-      { Array.isArray(animes.data)
+      <FaArrowAltCircleLeft className='leftArrow' onClick={() => previousClick()} />
+      <FaArrowAltCircleRight className='rightArrow' onClick={() => nextClick()} />
+      
+      { 
 
-      ? (animes.data.map((anime, index) =>  (
-          <div key={anime.images.jpg.large_image_url} className={index === current? 'smoothTransition': 'transition'}>
-              
+       animes.map((anime, index) =>  (
+        
+          <div key={anime.name} className={index === current? 'smoothTransition': 'transition'}>
+              {console.log(anime)}
               {index === current && (
-               <>
-                <img  src={anime.images.jpg.large_image_url} alt="The anime" className='image' />
+               <>             
+                
+                <img  src={anime.image} alt="The anime" className='image' />
+                <h2> Name: {anime.name}</h2>
+                <hr />
                 <h3>Show Description</h3>
-
+                <small>{anime.description}</small>
                </>
               )}
-              
-              
-
           </div>
-      ))) : null
+      ))
             
-    }
+      }
       
-     
+      
     </div>
   )
 }

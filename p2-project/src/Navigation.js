@@ -17,10 +17,13 @@ function Navigation() {
   return (
     <div className="NavBar">
         <NavLink to='/'  style={linkStyles}>
-            Home
+            Quotes
         </NavLink>
         <NavLink to='/animes'  style={linkStyles}>
             Animes
+        </NavLink>
+        <NavLink to='/animes/new' style={linkStyles} >
+          Add Anime
         </NavLink>
         <NavLink to='/questions'  style={linkStyles}>
             Anime Quiz

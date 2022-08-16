@@ -3,15 +3,14 @@ import Question from './Question'
 
 import questions from './Data'
 
- function Questions() {
-
-
+ function Questions({PageTitleStyle, score, setScore}) {
+    let questionsList = questions.map(question => question )
   return (
     <div className='Questions'>
       <br />
       <h1>  Test Your Knowledge</h1>
       <hr />
-      <Question questions={questions} />
+      <Question questions={questionsList} score={score} setScore={setScore} />
       <br />
       <br /> 
      
