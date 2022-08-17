@@ -49,7 +49,7 @@ import {useHistory} from 'react-router-dom'
 
   return (
     <div  className='AnimeForm'>
-        <h2 style={PageTitleStyle}>Add one of your favorite Animes</h2> 
+        <h2>Add one of your favorite Animes</h2> 
         <hr />
         <form onSubmit={handleSubmit}>
             <label>Input Name: </label>
