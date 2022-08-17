@@ -21,4 +21,13 @@ This project was created to expose anime fans to some of my favorite shows, char
 The technologies used within this app:
 * React.js
 * React-router-dom 5.2.0
-16
+
+## Setup
+To run locally:
+```
+$ cd p2-project
+$ npm install
+$ json-server --watch db.json
+$ npm start
+
+```
