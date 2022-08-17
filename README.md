@@ -1,6 +1,6 @@
 # Anime Introduction
 
-##Contents
+## Contents
 * [App Description](#app-Description)
 * [Technologies](#technologies)
 * [Setup](#setup)
