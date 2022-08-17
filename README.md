@@ -31,3 +31,7 @@ $ json-server --watch db.json
 $ npm start
 
 ```
+## References
+
+  Animechan(2022)Random[API].
+  https://animechan.vercel.app/api/random
