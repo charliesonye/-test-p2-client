@@ -6,5 +6,5 @@
 * [Setup](#setup)
 
 
-## App Description
+## Project Description
 This app
