@@ -10,7 +10,7 @@
 
 ## Project Description
 
-This project was created to expose anime fans to some of my favorite shows, characters and test their knowledge of anime. They are also encourage to add animes to the current list.
+This project was created to expose anime fans to some of my favorite shows, characters and test their knowledge of anime. They are also encouraged to add animes to the current list.
 
 ## Features
 * See random/popular quotes from popular anime character 
