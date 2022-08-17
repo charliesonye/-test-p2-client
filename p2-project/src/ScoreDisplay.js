@@ -12,6 +12,7 @@ import {Link, useHistory} from 'react-router-dom'
     return (
     <div>
         <h1> Scoreboard</h1>
+        <hr />
         <label> You scored {score}/5</label>
         <h3> {score < 3 ? "Good Attempt": "Great Job"}</h3>
       

@@ -40,6 +40,7 @@ import {useHistory} from 'react-router-dom'
         image: "",
         description: ""
       })
+      
       history.push('/animes')
     })
    

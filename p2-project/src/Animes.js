@@ -25,9 +25,9 @@ function Animes({ animes}) {
       { 
 
        animes.map((anime, index) =>  (
-        
+          
           <div key={anime.name} className={index === current? 'smoothTransition': 'transition'}>
-              {console.log(anime)}
+              {/* {console.log(anime.image)} */}
               {index === current && (
                <>             
                 

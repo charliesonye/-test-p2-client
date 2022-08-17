@@ -25,6 +25,10 @@ function addAnime(animes,newAnime){
    
   setAnimes([...animes, newAnime])
 }
+
+// function newAnimeImg (){
+//   setNewAnimeView(!newAnimeView)
+// }
   return (
  
 
@@ -44,7 +48,7 @@ function addAnime(animes,newAnime){
                 <Animes  animes={animes}  />
               </Route>
               <Route exact path='/animes/new' >
-                <AnimeForm addAnime={addAnime} animes={animes} />
+                <AnimeForm addAnime={addAnime} animes={animes}  />
               </Route>
               <Route exact path= '/questions' >
                 <Questions  score={score} setScore={setScore} />  
