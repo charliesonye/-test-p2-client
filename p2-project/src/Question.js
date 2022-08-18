@@ -35,17 +35,10 @@ function Question({questions, score, setScore}) {
           <h4>Question {questions[currentQuestion].id}</h4>
           
           <p>{questions[currentQuestion].prompt} </p>
-          {/* Use fetch  */}
-          {/* <select onChange= {() => onHandleAnswer() }>
-                
-                <option>Please choose an option</option>
-                {answersList}
-            </select> */}
             {
                questions[currentQuestion].answers.map((answer, index) => {
     
                 return(
-                //  <option value={index} key={index}>{answer.answer}</option>
                 <button key={index} value={index} onClick={() => onHandleAnswer(answer.isCorrect)} >{answer.answer}</button>
                 )
               })
