@@ -3,7 +3,7 @@ import Question from './Question'
 
 import questions from './Data'
 
- function Questions({PageTitleStyle, score, setScore}) {
+ function Questions({ score, setScore}) {
     let questionsList = questions.map(question => question )
   return (
     <div className='Questions'>
