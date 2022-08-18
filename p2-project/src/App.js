@@ -26,9 +26,7 @@ function addAnime(animes,newAnime){
   setAnimes([...animes, newAnime])
 }
 
-// function newAnimeImg (){
-//   setNewAnimeView(!newAnimeView)
-// }
+
   return (
  
 

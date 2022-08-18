@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 
- function AnimeForm({PageTitleStyle, addAnime, animes}) {
+ function AnimeForm({ addAnime, animes}) {
   
   const history = useHistory()
   const [formData, setFormData] =useState({

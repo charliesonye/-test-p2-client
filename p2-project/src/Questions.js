@@ -1,10 +1,10 @@
 import React from 'react'
 import Question from './Question'
 
-import questions from './Data'
+import questionsData from './QuestionsData'
 
  function Questions({ score, setScore}) {
-    let questionsList = questions.map(question => question )
+    let questionsList = questionsData.map(question => question )
   return (
     <div className='Questions'>
       <br />

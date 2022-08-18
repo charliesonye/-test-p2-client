@@ -1,4 +1,4 @@
-const questions = [
+const questionsData = [
     {
       id: 1,
       prompt: "Which anime has a swordsman that is notorious for hunting his own kind and carries three swords?",
@@ -54,4 +54,4 @@ const questions = [
     }
   ] 
 
-  export default questions
+  export default questionsData
