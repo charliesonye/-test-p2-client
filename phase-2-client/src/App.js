@@ -8,17 +8,17 @@ import ScoreDisplay from './ScoreDisplay'
 import './App.css';
 import AnimeForm from './AnimeForm'
 
+
 function App() {
 
 const [score, setScore] = useState(0)
 const [animes, setAnimes] = useState([])
 
 
-
 useEffect(() => {
-  fetch('http://localhost:3000/animes')
+  fetch('/animes')
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(data => setAnimes(data))
 }, [])
   
 
