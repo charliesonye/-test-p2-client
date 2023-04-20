@@ -6,7 +6,7 @@
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Link to server side of this application](#https://github.com/charliesonye/phase-2-server)
+* [Link to server side of this application](https://github.com/charliesonye/phase-2-server)
 
 
 ## Project Description
