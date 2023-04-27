@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import {Switch, Route} from 'react-router-dom'
-import Quotes from './Quotes'
 import Animes from './Animes'
+import Quotes from './Quotes'
 import Questions from './Questions'
 import Navigation from './Navigation'
 import ScoreDisplay from './ScoreDisplay'
@@ -22,8 +22,7 @@ useEffect(() => {
 }, [])
   
 
-function addAnime(animes,newAnime){
-   
+function addAnime(animes,newAnime){ 
   setAnimes([...animes, newAnime])
 }
 

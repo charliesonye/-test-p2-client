@@ -49,18 +49,6 @@ import {useHistory} from 'react-router-dom'
     
   }
 
-
-// function handleChangeT(e){
-//   setText(e.target.value)
-// }
-
-// function clickText(e){
-  
-//   setCount(count + text.length )
-// }
-
-
-
   return (
     <div  className='AnimeForm'>
         <h2>Add one Anime</h2> 
